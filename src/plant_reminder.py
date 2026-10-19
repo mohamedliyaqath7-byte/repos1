@@ -22,6 +22,11 @@ def check_plant(moisture):
 
 
 if __name__ == "__main__":
+    reminders = 0
     for reading in range(8):
         moisture = read_soil_moisture()
-        print(f"Reading {reading + 1}: moisture = {moisture}% -> {check_plant(moisture)}")
+        message = check_plant(moisture)
+        if message.startswith("REMINDER"):
+            reminders += 1
+        print(f"Reading {reading + 1}: moisture = {moisture}% -> {message}")
+    print(f"Total reminders sent: {reminders}")
