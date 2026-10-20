@@ -79,5 +79,38 @@ src/
   plant_reminder.py
 ```
 
+## About this project
+
+This is a simulator for a robot that reminds me to water a plant. It follows the basic robot pattern of sensor, decision and action.
+
+1. **Sensor:** reads the soil moisture as a number from 0 to 100 percent (simulated with random numbers).
+2. **Decision:** below 30 percent the soil is too dry, between 30 and 50 percent I should keep an eye on it, and above 50 percent it is fine.
+3. **Action:** the program prints "REMINDER: Water the plant!" when the soil is dry and counts the reminders.
+
+Run it with: `python src/plant_reminder.py`
+
 ## Screenshots
-(Screenshots of the Trello board, the commit history and a merged pull request are added here.)
+
+**Trello board.** Three lists, coloured labels, due dates and the lecturer as a member.
+
+![Trello board](docs/screenshots/trello-board.png)
+
+**Done cards with pull request links.** Each finished card links to its pull request.
+
+![Trello done cards](docs/screenshots/trello-done-links.png)
+
+**Commit history.** The full history and the project running from a clone.
+
+![Git log](docs/screenshots/git-log.png)
+
+**Pull requests.** Five merged pull requests.
+
+![Pull requests](docs/screenshots/pull-requests.png)
+
+**Collaborators.** The lecturer is invited as a collaborator.
+
+![Collaborators](docs/screenshots/collaborators.png)
+
+**Repository.** The public repository main page.
+
+![Repository](docs/screenshots/repo-main.png)
